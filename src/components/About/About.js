@@ -1,11 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./Aboutcard";
-import laptopimg from "../../Assets/laptopimg.svg";
-import Toolstack from "./Toolstack";
+import laptopimg from "../../Assets/laptopimg.png";
+
 
 function About() {
   return (
@@ -41,12 +40,7 @@ function About() {
 
         <Techstack />
 
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
-        <Toolstack />
-
-        <Github />
+        
       </Container>
     </Container>
   );
