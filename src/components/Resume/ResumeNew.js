@@ -6,10 +6,8 @@ import pdf from "../../Assets/../Assets/Anbalagan.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-
-function ResumeNew() {
-  const [width, setWidth] = useState(1200);
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`;
+function ResumeNew() {  const [width, setWidth] = useState(1200);
 
   useEffect(() => {
     setWidth(window.innerWidth);
